@@ -7,7 +7,6 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
-  // int counter = 0;
   List<WorldTime> locations = [
     WorldTime(
         url: 'Asia/Kathmandu',
@@ -67,7 +66,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
 
   @override
   Widget build(BuildContext context) {
-    // print('build function ran');
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
@@ -93,14 +91,6 @@ class _ChooseLocationState extends State<ChooseLocation> {
           );
         },
       ),
-      // body: ElevatedButton(
-      //   onPressed: () {
-      //     setState(() {
-      //       counter++;
-      //     });
-      // },
-      // child: Text('counter is $counter'),
-      // ),
     );
   }
 }

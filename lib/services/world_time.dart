@@ -18,7 +18,6 @@ class WorldTime {
       String datetime = data['datetime'];
       String offset = data['utc_offset'].substring(0, 3);
       String minoffset = data['utc_offset'].substring(4, 6);
-      //substring cuz we dont need the :00
       // print(datetime);
       // print(offset);
       DateTime now = DateTime.parse(datetime);

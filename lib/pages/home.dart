@@ -18,6 +18,7 @@ class _HomeState extends State<Home> {
         ? 'https://us.123rf.com/450wm/iimages/iimages1408/iimages140800500/30783007-ilustration-of-a-view-of-a-green-field.jpg?ver=6'
         : 'https://cdn.pixabay.com/photo/2016/11/25/23/15/moon-1859616__340.jpg';
     Color clr = data['isDay'] ? Colors.blue : Colors.black;
+    Color txtclr = data['isDay'] ? Colors.black : Colors.white;
     return Scaffold(
       backgroundColor: clr,
       body: SafeArea(
@@ -46,11 +47,11 @@ class _HomeState extends State<Home> {
                   },
                   icon: Icon(
                     Icons.edit_location,
-                    color: Colors.grey[300],
+                    color: txtclr,
                   ),
                   label: Text(
                     'Choose Location',
-                    style: TextStyle(color: Colors.grey[300]),
+                    style: TextStyle(color: txtclr),
                   ),
                 ),
                 SizedBox(height: 20),
@@ -61,7 +62,7 @@ class _HomeState extends State<Home> {
                         style: TextStyle(
                           fontSize: 20,
                           letterSpacing: 2,
-                          color: Colors.grey[300],
+                          color: txtclr,
                         ))
                   ],
                 ),
@@ -70,7 +71,7 @@ class _HomeState extends State<Home> {
                 ),
                 Text(
                   data['time'],
-                  style: TextStyle(fontSize: 70),
+                  style: TextStyle(fontSize: 70, color: txtclr),
                 )
               ],
             ),
